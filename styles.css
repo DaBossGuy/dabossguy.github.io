@@ -1,4 +1,4 @@
-h2 {
+h2NOT {
     color: red;
   }
   .sus {
@@ -6,10 +6,36 @@ h2 {
     font-weight: bold;
   }
   .finkle {
-    font-family: "Courier New"
+    font-family: "Courier New";
   }
-  
-  
+  .finklecenter {
+    font-family: "Courier New";
+    text-align: center;
+  }
+  .finklep {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif ;
+    text-align: center;
+  }
+  .sansserif {
+    font-family: sans-serif;
+  }
+  .sansserifcenter {
+    font-family: sans-serif;
+    text-align: center;
+  }
+  .very {
+    font-size: larger;
+  }
+  .center {
+    text-align: center;
+  }
+  .centerfinkleimage {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 25%;
+    height: 25%;
+  }
   
   
   
@@ -38,6 +64,6 @@ h2 {
   
   /* Add a color to the active/current link */
   .topnav a.active {
-    background-color: #04AA6D;
+    background-color: #4d0b0b;
     color: white;
   }
