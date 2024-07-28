@@ -1,12 +1,31 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <title>Freakybob is calling</title>
+</head>
 <body>
-    <h1>My Video</h1>
-    <video width="640" height="360" controls>
+    <h1>Freakybob is calling</h1>
+    <video id="myVideo" width="640" height="360" controls autoplay>
         <source src="./video.mp4" type="video/mp4">
         Your browser does not support the video tag.
     </video>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', (event) => {
+            const videoElement = document.getElementById('myVideo');
+            
+            if (videoElement.requestFullscreen) {
+                videoElement.requestFullscreen();
+            } else if (videoElement.mozRequestFullScreen) { // Firefox
+                videoElement.mozRequestFullScreen();
+            } else if (videoElement.webkitRequestFullscreen) { // Chrome, Safari, and Opera
+                videoElement.webkitRequestFullscreen();
+            } else if (videoElement.msRequestFullscreen) { // IE/Edge
+                videoElement.msRequestFullscreen();
+            }
+            
+            videoElement.play();
+        });
+    </script>
 </body>
-</head>
 </html>
